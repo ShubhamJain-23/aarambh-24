@@ -4,6 +4,7 @@ import NextLink from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Inter } from "next/font/google";
+import posterImage from './poster.png';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -50,24 +51,34 @@ const Header: React.FC = () => {
   };
 
   return (
-    <div className={`relative ${inter.className}`} style={{ position: "sticky", top: 0, width: "100%", zIndex: 100 }}>
+  <div>
+    <div className="bg-local static inset-0 z-[-1]">
+    {/* <Image
+      src="/posterlandscape.png"
+      alt="Background Image"
+      fill
+      style={{ objectFit: "cover" }}
+      className="hidden md:block"
+    /> */}
+      <div className={`relative ${inter.className}`} style={{ position: "sticky", top: 0,   width: "100%", zIndex: 100, backgroundImage: "url('poster.png')", backgroundRepeat: "no-repeat"}}>
+
       <header
-        className="relative text-black py-3 px-4 md:px-14 lg:px-24 flex mt-5 md:mt-10 justify-between items-center p-4 bg-white-rgba"
+        className="relative text-black py-3 px-4 md:py-0.5  md:px-14 lg:px-24 flex justify-between items-center p-4 bg-footerpink bg-opacity-50"
       >
         <div className="flex items-start">
 
           <NextLink href="/" passHref>
-            <div className="relative h-[3rem] w-[10rem] md:h-[3rem] md:h-[3.5rem] justify-centre" >
+            <div className="relative h-[3rem] w-[10rem] md:h-[3.5rem] flex items-center justify-centre" >
               <Image
                 src="/logo.png"
                 alt="Logo"
                 width={265}
                 height={65}
-                className=" h-[3rem] w-[10rem] md:h-[2.5rem] md:w-[12.5rem] flex items-center justify-center object-contain"
+                className=" h-[3rem] w-[10rem] md:h-[3.5rem] md:w-[12.5rem] flex items-center justify-center object-contain"
               />
             </div>
           </NextLink>
-          <NextLink href="/" passHref>
+          {/* <NextLink href="/" passHref>
             <Image
               src="/hackjklu-text.png"
               alt="Text"
@@ -75,7 +86,7 @@ const Header: React.FC = () => {
               height={65}
               className="h-[2rem] w-[10rem] md:h-[2.5rem] md:w-[12.5rem] flex items-center justify-center"
             />
-          </NextLink>
+          </NextLink> */}
         </div>
 
         {/* Hamburger menu */}
@@ -90,54 +101,56 @@ const Header: React.FC = () => {
           </button>
         </div>
 
-        <nav className="hidden lg:flex  space-x-[4rem] ${menuOpen ? 'hidden' : 'block'}">
+        <nav className="hidden lg:flex space-x-[4rem] ${menuOpen ? 'hidden' : 'block'}">
           <NextLink href="/" passHref>
             <span
-              className={`cursor-pointer text-[1.2rem] ${pathname === "/" ? "underline decoration-[#A9A9A9] underline-offset-[1.7rem] decoration-2 text-gray-100" : "hover:underline decoration-[#A9A9A9] underline-offset-[1.7rem] decoration-5 hover:text-gray-100 text-gray-400"}`}
+              className={`cursor-pointer text-[1.2rem] ${pathname === "/" ? "underline decoration-[#B22D4E] underline-offset-[1.7rem] decoration-2 text-footerpink text-[1.3rem] text-bold" : "hover:underline decoration-[#000] underline-offset-[1.7rem] decoration-5 hover:text-black text-footerpink"}`}
             >
               Home
             </span>
           </NextLink>
           <NextLink href="/events" passHref>
             <span
-              className={`cursor-pointer text-[1.2rem] ${pathname === "/events" ? "underline decoration-[#A9A9A9] underline-offset-[1.7rem] decoration-2 text-gray-100" : "hover:underline decoration-[#A9A9A9] underline-offset-[1.7rem] decoration-2 hover:text-gray-100 text-gray-400"}`}
+              className={`cursor-pointer text-[1.2rem] ${pathname === "/events" ? "underline decoration-[#B22D4E] underline-offset-[1.7rem] decoration-2 text-footerpink text-[1.3rem] text-bold" : "hover:underline decoration-[#000] underline-offset-[1.7rem] decoration-2 hover:text-black text-footerpink"}`}
             >
               Events
             </span>
           </NextLink>
           <NextLink href="/team" passHref>
             <span
-              className={`cursor-pointer text-[1.2rem] ${pathname === "/team" ? "underline decoration-[#A9A9A9] underline-offset-[1.7rem] decoration-2 text-gray-100" : "hover:underline decoration-[#A9A9A9] underline-offset-[1.7rem] decoration-2 hover:text-gray-100 text-gray-400"}`}
+              className={`cursor-pointer text-[1.2rem] ${pathname === "/team" ? "underline decoration-[#B22D4E] underline-offset-[1.7rem] decoration-2 text-footerpink text-[1.3rem] text-bold" : "hover:underline decoration-[#000] underline-offset-[1.7rem] decoration-2 hover:text-black text-footerpink"}`}
             >
               Team
             </span>
           </NextLink>
         </nav>
       </header>
+      
+      
       {/* Sidebar - Mobile View */}
       {menuOpen && (
         <div
           ref={sidebarRef}
-          className="lg:hidden fixed top-0 right-0 h-full w-1/2 bg-black p-4 shadow-md z-50 overflow-y-auto"
+          className="lg:hidden fixed top-0 right-0 h-full w-1/2 bg-footerpink bg-opacity-30 p-4 shadow-md z-50 overflow-y-auto"
         >
           <div className="mt-[1.5rem] ml-[0.3rem]">
             <NextLink href="/" passHref>
               <span
-                className={`cursor-pointer text-1.5rem text-white block mb-4`}
+                className={`cursor-pointer text-1.5rem text-footerpink block mb-4`}
               >
                 Home
               </span>
             </NextLink>
-            <NextLink href="/about" passHref>
+            <NextLink href="/events" passHref>
               <span
-                className={`cursor-pointer text-1.5rem text-white block mb-4`}
+                className={`cursor-pointer text-1.5rem text-footerpink block mb-4`}
               >
-                About
+                Events
               </span>
             </NextLink>
             <NextLink href="/team" passHref>
               <span
-                className={`cursor-pointer text-1.5rem text-white block mb-4`}
+                className={`cursor-pointer text-1.5rem text-footerpink block mb-4`}
               >
                 Team
               </span>
@@ -153,6 +166,10 @@ const Header: React.FC = () => {
         </div>
       )}
     </div>
+    
+    
+  </div>
+  </div>
   );
 };
 

@@ -23,6 +23,7 @@ const config = {
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         footerpink: '#B22D4E',
+        darkcyan: '#249683',
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
