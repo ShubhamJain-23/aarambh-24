@@ -1,0 +1,34 @@
+[
+  {
+   "name": "Deepak Sogani",
+   "committee": "Head - Student Affairs",
+   "email": "deepak.sogani@jklu.edu.in",
+   "contact": "70736 99800",
+   "photo": "/team-photos/MananPandya.jpg",
+   "linkedin": "https://www.linkedin.com/in/deepak-sogani/"
+   },
+   {
+     "name": "Pallavee Sharma",
+     "committee": "Sr. Executive- Wellness - Student Affairs",
+     "email": "pallavee.sharma@jklu.edu.in",
+     "contact": "98280 67878",
+     "photo": "/team-photos/MananPandya.jpg",
+     "linkedin": "https://www.linkedin.com/in/pallavee-sharma-17997a180/"
+     },
+     {
+       "name": "Vaibhav Topiwala",
+       "committee": "Sports Officer",
+       "email": "vaibhav.topiwala@jklu.edu.in",
+       "contact": "90241 64417",
+       "photo": "/team-photos/MananPandya.jpg",
+       "linkedin": "https://www.linkedin.com/in/vaibhav-topiwala-8894a2223/"
+       },
+       {
+         "name": "Priya Kaushik",
+         "committee": "Executive - Student Affairs",
+         "email": "priya.kaushik@jklu.edu.in",
+         "contact": "97721 34536",
+         "photo": "/team-photos/MananPandya.jpg",
+         "linkedin": "https://www.linkedin.com/in/priya-kaushik/"
+  }
+]
