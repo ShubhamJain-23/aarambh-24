@@ -17,59 +17,59 @@ const Footer: FC = () => {
     <footer className="bg-footerpink bg-opacity-50 text-black">
       <div className="container mx-auto px-4 py-10">
         <div className="flex flex-wrap justify-around">
-          
+
           {/* Contact Us Section */}
           <div className="w-full md:w-2.8/10">
             <h2 className="text-4xl font-bold mb-4 sm:mx-10">Contact Us</h2>
             <ul className="list-none">
               <li className="flex items-center mb-5 sm:mx-10">
-              <span>
-                <Link href="/">
-                <FaPhone className="h-10 w-10 mr-2" />
-                </Link>
-              </span>
-              <span className="text-black sm:text-xl">9314072153</span>
+                <span>
+                  <Link href="/">
+                    <FaPhone className="h-10 w-10 mr-2" />
+                  </Link>
+                </span>
+                <span className="text-black sm:text-lg">9314072153</span>
               </li>
               <li className="flex items-center mb-5 sm:mx-10">
-              <span>
+                <span>
+                  <Link href="mailto:deepak.sogani@jklu.edu.in">
+                    <FaEnvelope className="h-10 w-10 mr-2" />
+                  </Link>
+                </span>
                 <Link href="mailto:deepak.sogani@jklu.edu.in">
-                <FaEnvelope className="h-10 w-10 mr-2" />
-                </Link>
-              </span>
-                <Link href="mailto:deepak.sogani@jklu.edu.in">
-              <span className="text-black sm:text-xl">deepak.sogani@jklu.edu.in</span>
+                  <span className="text-black sm:text-lg">deepak.sogani@jklu.edu.in</span>
                 </Link>
               </li>
             </ul>
           </div>
-          
+
           {/* Address and social media icons Section */}
           <div className="w-full md:w-2.8/10 my-6 md:my-0 items-end">
             <h2 className="text-4xl font-bold mb-4 md:text-left">Address</h2>
             <ul className="list-none flex-wrap">
               <li className="flex items-start mb-5">
-              <span>
-                <Link href="https://www.jklu.edu.in/">
-                <MapPinIcon className="h-10 w-10 mr-2" />
-                </Link>
-              </span>
-              <span className="text-black sm:text-xl">JK Lakshmipat University, Mahapura Rd, near Mahindra SEZ, Mahapura, Rajasthan 302026</span>
+                <span>
+                  <Link href="https://www.jklu.edu.in/">
+                    <MapPinIcon className="h-10 w-10 mr-2" />
+                  </Link>
+                </span>
+                <span className="text-black sm:text-lg">JK Lakshmipat University, Mahapura Rd, near Mahindra SEZ, Mahapura, Rajasthan 302026</span>
               </li>
             </ul>
-            <ul className="flex sm:flex-row lg:justify-start justify-around md:justify-between my-8">
-              <li className="items-center lg:mx-10 mb-2">
-                <Link href="https://www.instagram.com/jklu_jaipur">
-                <FaInstagram className="h-8 w-8 mr-2" />
+            <ul className="flex justify-center gap-6 md:gap-1 my-8">
+              <li className="items-center lg:mx-8 mb-2">
+                <Link href="https://www.instagram.com/jklu_jaipur" target='_blank'>
+                <FaInstagram className="h-6 w-6 mr-1" />
                 </Link>
               </li>
-              <li className="items-center lg:mx-10 mb-2">
-                <Link href="https://in.linkedin.com/school/jk-lakshmipat-university-jaipur/">
-                <FaLinkedinIn className="h-8 w-8 mr-2" />
+              <li className="items-center lg:mx-8 mb-2">
+                <Link href="https://in.linkedin.com/school/jk-lakshmipat-university-jaipur/" target='_blank'>
+                  <FaLinkedinIn className="h-6 w-6 mr-1" />
                 </Link>
               </li>
-              <li className="items-center lg:mx-10 mb-2">
-                <Link href="https://www.jklu.edu.in/">
-                <FaGlobe className="h-8 w-8 mr-2" />
+              <li className="items-center lg:mx-8 mb-2">
+                <Link href="https://www.jklu.edu.in/" target='_blank'>
+                  <FaGlobe className="h-6 w-6 mr-1" />
                 </Link>
               </li>
             </ul>
@@ -85,13 +85,13 @@ const Footer: FC = () => {
               aria-hidden="false"
               tabIndex={0}
               className="border-black-800 border-2 rounded-md"
-              
+
             />
           </div>
 
         </div>
         <div className="flex flex-col md:flex-row justify-around items-center mt-8">
-        <NextLink href="/" passHref>
+          <NextLink href="/" passHref>
             <div className="relative h-[rem] md:w-[18rem] md:h-[3rem] md:h-[3.5rem] justify-center" >
               <Image
                 src="/logo.png"
@@ -116,11 +116,11 @@ const Footer: FC = () => {
               </span>
             </NextLink>
             <span className="text-[0.7rem] md:text-sm"> & </span>
-            <NextLink 
+            <NextLink
               href="https://github.com/ShubhamJain-23"
               target="_blank"
               passHref
-              >
+            >
               <span className="hover:font-bold text-[0.9rem] md:text-sm">
                 Developed by Shubham Jain
               </span>
