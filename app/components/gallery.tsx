@@ -21,30 +21,30 @@ function Gallery() {
                 <div className="p-1">
                   <Card>
                     <CardContent className="flex items-center justify-center p-0">
-                      <img
+                      <Image
                         src={path}
                         alt={`Image ${index + 1}`}
                         // layout="responsive"
-                        width="100%" // Set the width to the actual width of your images
-                        height="50%" // Set the height to the actual height of your images
+                        width="100" // Set the width to the actual width of your images
+                        height="500" // Set the height to the actual height of your images
                       />
                     </CardContent>
                     <CardContent className="flex items-center justify-center p-0">
-                      <img
+                      <Image
                         src={path}
                         alt={`Image ${index + 2}`}
                         // layout="responsive"
-                        width="100%" // Set the width to the actual width of your images
-                        height="50%" // Set the height to the actual height of your images
+                        width="100" // Set the width to the actual width of your images
+                        height="500" // Set the height to the actual height of your images
                       />
                     </CardContent>
                     <CardContent className="flex items-center justify-center p-0">
-                      <img
+                      <Image
                         src={path}
                         alt={`Image ${index + 3}`}
                         // layout="responsive"
-                        width="100%" // Set the width to the actual width of your images
-                        height="50%" // Set the height to the actual height of your images
+                        width="100" // Set the width to the actual width of your images
+                        height="50" // Set the height to the actual height of your images
                       />
                     </CardContent>
                   </Card>

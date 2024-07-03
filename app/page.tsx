@@ -14,7 +14,7 @@ export default function Home() {
     <main className={`min-h-screen items-center  ${montserrat.className}`}>
       <div className={`mx-[1rem] md:mx-[10rem] ${montserrat.className}`}>
         {/* <Poster /> */}
-        <img className="h-[1080px]" alt="" src="" />
+        {/* <img className="h-[1080px]" alt="" src="" /> */}
         <div className="absolute max-w-full overflow-hidden object-cover inset-0 z-[-1]">
           <Image
             src="/banner.png"
