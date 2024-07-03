@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import React, { ReactNode } from "react"; // Import ReactNode from 'react'
-import { Inter } from "next/font/google";
+import { Montserrat  } from "next/font/google";
 import "./globals.css";
 import Header from "./components/header";
 import Footer from "./components/footer";
+import Gallery from "./components/gallery";
 
-const inter = Inter({ subsets: ["latin"] });
+const montserrat  = Montserrat ({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Aarambh",
@@ -23,8 +24,9 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={montserrat.className}>
         <Header />
+
         {children}
         <Footer />
       </body>
