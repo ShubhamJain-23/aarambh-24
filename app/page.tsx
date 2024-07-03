@@ -16,14 +16,14 @@ export default function Home() {
         {/* <Poster /> */}
         {/* <img className="h-[1080px]" alt="" src="" /> */}
         <div className="absolute max-w-full overflow-hidden object-cover inset-0 z-[-1]">
-          <Image
+          {/* <Image
             src="/banner.png"
             alt="Cover Picture"
  fill
             style={{ objectFit: "fill" }}
             className="hidden relative lg:block md:block"
           >
-          </Image>
+          </Image> */}
         </div>
         <div className="absolute inset-x-0 top-[4.5rem] z-[-1]">
           <Image
