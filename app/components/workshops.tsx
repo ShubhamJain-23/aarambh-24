@@ -30,9 +30,9 @@ function workshops() {
               width={450}
               className='rounded-[2rem] mx-auto' />
           </div>
-          <div className='md:w-1/2 text-left my-auto'>
+          <div className='md:w-1/2 text-center md:text-left my-auto'>
             <h2 className='font-bold text-3xl py-2'>Ice Breaking</h2>
-            <p className='text-wrap md:text-left md:align-left text-xl'>Discover an Unforgettable Ice-Breaking Session with Manish Freeman!
+            <p className='text-wrap text-center md:text-left md:align-left text-xl'>Discover an Unforgettable Ice-Breaking Session with Manish Freeman!
               This event isn’t just another gathering—it’s a chance to break free from the norm, have a lot of fun, and create memories that will last. Whether you're looking to meet new people, share laughter, or step out of your comfort zone, this is the place to be.
 
             </p>
@@ -73,9 +73,9 @@ function workshops() {
               width={450}
               className='rounded-[2rem] mx-auto' />
           </div>
-          <div className='md:w-1/2 text-left my-auto'>
+          <div className='md:w-1/2 text-center text-left my-auto'>
             <h2 className='font-bold text-3xl py-2'>Rang Mastaaney</h2>
-            <p className='text-wrap md:text-left md:align-left text-xl'>For 13 years Rang Mastaaney has been wowing audiences with their shows. They have a repertoire of 65 plays, 250 stage productions and 1000 street shows of their superhit play Ab Bas. And they hold the record of being the only theatre group in the country to present 7 different plays by the same group in 4 consecutive days in Alwar.
+            <p className='text-wrap text-center md:text-left md:align-left text-xl'>For 13 years Rang Mastaaney has been wowing audiences with their shows. They have a repertoire of 65 plays, 250 stage productions and 1000 street shows of their superhit play Ab Bas. And they hold the record of being the only theatre group in the country to present 7 different plays by the same group in 4 consecutive days in Alwar.
             </p>
           </div>
         </div>
@@ -88,7 +88,7 @@ function workshops() {
               width={450}
               className='rounded-[2rem] mx-auto' />
           </div>
-          <div className='md:w-1/2 text-right my-auto'>
+          <div className='md:w-1/2 text-center md:text-right my-auto'>
             <h2 className='font-bold text-3xl py-2'>Pottery and Clay</h2>
             <p className='text-wrap md:text-right md:align-right text-xl'>Join us for the source of joy and amusement with the great experience and opportunity to learn and know more towards the creative side of the world. Here you may gain insight into various ceramic techniques and skills from experienced instructor whose work reflects the many influences he had over the years of training so it is not only an art form but also a relaxing activity.
             </p>
@@ -111,9 +111,9 @@ function workshops() {
               width={450}
               className='rounded-[2rem] mx-auto' />
           </div>
-          <div className='md:w-1/2 text-left my-auto'>
+          <div className='md:w-1/2 text-center md:text-left my-auto'>
             <h2 className='font-bold text-3xl py-2'>Pravah</h2>
-            <p className='text-wrap md:text-left md:align-left text-xl'>Prepare yourself for an exciting seminar series presented by Pravah at J.K. Lakshmipat University! Join us for the "Self to Society: Explorations & Awareness" workshop, an incredible journey of self-discovery. Through engaging activities and lively discussions, you'll uncover your true potential and enhance your communication, teamwork, and empathy skills.
+            <p className='text-wrap text-center md:text-left md:align-left text-xl'>Prepare yourself for an exciting seminar series presented by Pravah at J.K. Lakshmipat University! Join us for the "Self to Society: Explorations & Awareness" workshop, an incredible journey of self-discovery. Through engaging activities and lively discussions, you'll uncover your true potential and enhance your communication, teamwork, and empathy skills.
             </p>
           </div>
         </div>
